@@ -1,5 +1,5 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'kotlin-android'
     id 'kotlin-kapt'
     id 'androidx.navigation.safeargs.kotlin'
@@ -16,11 +16,5 @@ apply from: "$rootDir/build-system/support/support.gradle"
 apply from: "$rootDir/build-system/test/android-test.gradle"
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(":abstraction")
-    implementation project(":network")
-    implementation project(":data")
-
-    implementation project(":feature:detail")
-    implementation project(":feature:list")
 }

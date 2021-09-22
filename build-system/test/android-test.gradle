@@ -1,0 +1,9 @@
+dependencies {
+    // ANDROID TEST
+    testImplementation test.jUnit
+    androidTestImplementation test.coreTest
+    androidTestImplementation test.jUnitExt
+    androidTestImplementation test.espresso
+}
+
+apply from: "$rootDir/build-system/dependencies.gradle"

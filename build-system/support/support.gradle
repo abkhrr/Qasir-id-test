@@ -1,0 +1,27 @@
+apply from: "$rootDir/build-system/dependencies.gradle"
+
+dependencies {
+    // Android Navigation
+    implementation support.navigationFragment
+    implementation support.navigationUi
+
+    // ViewModel and Livedata
+    implementation support.lifecycle
+    implementation support.lifecycleVM
+    implementation support.lifecycleVMSavedState
+
+
+    // Kotlin Coroutines
+    implementation support.coroutines
+    implementation support.coroutinesCore
+
+    // Room database
+    implementation support.room
+    kapt support.roomCompiler
+    implementation support.roomCommon
+    implementation support.roomRxJava
+    implementation support.roomKtx
+
+    // Custom Tabs Chrome
+    implementation support.browser
+}
