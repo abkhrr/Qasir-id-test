@@ -30,10 +30,10 @@ apply from: "$rootDir/build-system/test/android-test.gradle"
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation project(":abstraction")
+
     implementation project(":network")
     implementation project(":data")
-
     implementation project(":feature:detail")
     implementation project(":feature:list")
+    implementation project(":utils")
 }

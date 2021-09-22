@@ -16,6 +16,6 @@ apply from: "$rootDir/build-system/support/support.gradle"
 apply from: "$rootDir/build-system/test/android-test.gradle"
 
 dependencies {
-    implementation project(":abstraction")
     implementation project(":network")
+    implementation project(":utils")
 }
