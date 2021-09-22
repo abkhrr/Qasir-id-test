@@ -44,7 +44,7 @@ ext {
     cardViewVersion           = "1.0.0"
     appCompatVersion          = "1.4.0-alpha03"
 
-    //kotlin std lib
+    // Kotlin & Kotlin std lib
     kotlinStdLib              = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
     //test
